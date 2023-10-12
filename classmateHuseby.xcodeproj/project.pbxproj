@@ -17,6 +17,8 @@
 		42DA299E2AD8358900A548C5 /* classmateHusebyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA299D2AD8358900A548C5 /* classmateHusebyTests.swift */; };
 		42DA29A82AD8358900A548C5 /* classmateHusebyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29A72AD8358900A548C5 /* classmateHusebyUITests.swift */; };
 		42DA29AA2AD8358900A548C5 /* classmateHusebyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29A92AD8358900A548C5 /* classmateHusebyUITestsLaunchTests.swift */; };
+		42DA29B72AD835AA00A548C5 /* Classmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29B62AD835AA00A548C5 /* Classmate.swift */; };
+		42DA29B92AD8399900A548C5 /* ViewControllerQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29B82AD8399900A548C5 /* ViewControllerQuiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		42DA29A32AD8358900A548C5 /* classmateHusebyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = classmateHusebyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DA29A72AD8358900A548C5 /* classmateHusebyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classmateHusebyUITests.swift; sourceTree = "<group>"; };
 		42DA29A92AD8358900A548C5 /* classmateHusebyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classmateHusebyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		42DA29B62AD835AA00A548C5 /* Classmate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classmate.swift; sourceTree = "<group>"; };
+		42DA29B82AD8399900A548C5 /* ViewControllerQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerQuiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,12 @@
 		42DA29822AD8358700A548C5 /* classmateHuseby */ = {
 			isa = PBXGroup;
 			children = (
+				42DA29B62AD835AA00A548C5 /* Classmate.swift */,
 				42DA29832AD8358700A548C5 /* AppDelegate.swift */,
 				42DA29852AD8358700A548C5 /* SceneDelegate.swift */,
 				42DA29872AD8358700A548C5 /* ViewController.swift */,
 				42DA29892AD8358700A548C5 /* Main.storyboard */,
+				42DA29B82AD8399900A548C5 /* ViewControllerQuiz.swift */,
 				42DA298F2AD8358900A548C5 /* Assets.xcassets */,
 				42DA29912AD8358900A548C5 /* LaunchScreen.storyboard */,
 				42DA29942AD8358900A548C5 /* Info.plist */,
@@ -262,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DA29882AD8358700A548C5 /* ViewController.swift in Sources */,
+				42DA29B92AD8399900A548C5 /* ViewControllerQuiz.swift in Sources */,
+				42DA29B72AD835AA00A548C5 /* Classmate.swift in Sources */,
 				42DA298E2AD8358700A548C5 /* classmateHuseby.xcdatamodeld in Sources */,
 				42DA29842AD8358700A548C5 /* AppDelegate.swift in Sources */,
 				42DA29862AD8358700A548C5 /* SceneDelegate.swift in Sources */,
