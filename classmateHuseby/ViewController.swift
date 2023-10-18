@@ -4,12 +4,14 @@
 //
 //  Created by CATHERINE HUSEBY on 10/12/23.
 //
-protocol ViewControllerDelegate {
-    func addClassmate(_ s1: Classmate)
-}
+//protocol ViewControllerDelegate {
+  //  func addClassmate(_ s1: Classmate)
+//}
 import UIKit
 
-class ViewController: UIViewController, ViewControllerDelegate {
+class ViewController: UIViewController {
+    
+    var delegate: ViewControllerDelegate!
     
     var ci = 0
     @IBOutlet weak var nameDisplayOutlet: UILabel!
@@ -30,31 +32,27 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     @IBOutlet weak var petOutlet: UITextField!
     
-    var classmates: [Classmate] = []
-    var chuseby = Classmate(name: "Catherine Huseby", age: 17, money: 20.00, pet: Pets.cat)
-    var jdoe = Classmate(name: "John Doe", age: 17, money: 24.07, pet: Pets.dog)
+   // var classmates: [Classmate] = []
+   // var chuseby = Classmate(name: "Catherine Huseby", age: 17, money: 20.00, pet: Pets.cat)
+   // var jdoe = Classmate(name: "John Doe", age: 17, money: 24.07, pet: Pets.dog)
     
     
-    
-    
-    //var name: String = ""
-    func addClassmate(_ s1: Classmate) {
-        classmates.append(s1)
-    }
-   
     
     
 
+    
+    var classmates: [Classmate] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        classmates.append(chuseby)
-        classmates.append(jdoe)
+       // classmates.append(chuseby)
+       // classmates.append(jdoe)
 
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-                
+        classmates = delegate.seeClassmates()
         showStudent()
     }
     
@@ -63,7 +61,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     //var sortedClassmates: [Classmate] = []
         //var names: [String] = []
         //var sortedNames: [String]  = []
-        
+        classmates = delegate.seeClassmates()
         classmates.sort(by: { $0.name < $1.name })
         
         ci = 0
@@ -114,7 +112,8 @@ class ViewController: UIViewController, ViewControllerDelegate {
             realPets = Pets.rock
         }
         
-        classmates.append(Classmate(name: name, age: age2, money: money2, pet: realPets))
+        delegate.addClassmate(Classmate(name: name, age: age2, money: money2, pet: realPets) )
+        //classmates.append(Classmate(name: name, age: age2, money: money2, pet: realPets))
         
 }
     
@@ -125,6 +124,8 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     
     func showStudent() {
+        
+       classmates = delegate.seeClassmates()
         nameDisplayOutlet.text = "Name: \(classmates[ci].name)"
         ageDisplayOutlet.text = "Age: \(String(classmates[ci].age))"
         moneyDisplayOutlet.text = "Money: \(String(classmates[ci].money))"
@@ -135,7 +136,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nvc = segue.destination as! ViewControllerQuiz
-        nvc.delegate = self
+        //nvc.delegate = self
     }
 
 

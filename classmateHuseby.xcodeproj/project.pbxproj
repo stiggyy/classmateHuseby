@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421C55012ADF57F000503D34 /* ViewControllerPleaseWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C55002ADF57F000503D34 /* ViewControllerPleaseWork.swift */; };
 		42DA29842AD8358700A548C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29832AD8358700A548C5 /* AppDelegate.swift */; };
 		42DA29862AD8358700A548C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29852AD8358700A548C5 /* SceneDelegate.swift */; };
 		42DA29882AD8358700A548C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29872AD8358700A548C5 /* ViewController.swift */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		421C54FC2ADF57A400503D34 /* classmateHuseby-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "classmateHuseby-Bridging-Header.h"; sourceTree = "<group>"; };
+		421C55002ADF57F000503D34 /* ViewControllerPleaseWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPleaseWork.swift; sourceTree = "<group>"; };
 		42DA29802AD8358700A548C5 /* classmateHuseby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classmateHuseby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DA29832AD8358700A548C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42DA29852AD8358700A548C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,11 +113,13 @@
 				42DA29852AD8358700A548C5 /* SceneDelegate.swift */,
 				42DA29872AD8358700A548C5 /* ViewController.swift */,
 				42DA29892AD8358700A548C5 /* Main.storyboard */,
+				421C55002ADF57F000503D34 /* ViewControllerPleaseWork.swift */,
 				42DA29B82AD8399900A548C5 /* ViewControllerQuiz.swift */,
 				42DA298F2AD8358900A548C5 /* Assets.xcassets */,
 				42DA29912AD8358900A548C5 /* LaunchScreen.storyboard */,
 				42DA29942AD8358900A548C5 /* Info.plist */,
 				42DA298C2AD8358700A548C5 /* classmateHuseby.xcdatamodeld */,
+				421C54FC2ADF57A400503D34 /* classmateHuseby-Bridging-Header.h */,
 			);
 			path = classmateHuseby;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				TargetAttributes = {
 					42DA297F2AD8358700A548C5 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1500;
 					};
 					42DA29982AD8358900A548C5 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -267,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421C55012ADF57F000503D34 /* ViewControllerPleaseWork.swift in Sources */,
 				42DA29882AD8358700A548C5 /* ViewController.swift in Sources */,
 				42DA29B92AD8399900A548C5 /* ViewControllerQuiz.swift in Sources */,
 				42DA29B72AD835AA00A548C5 /* Classmate.swift in Sources */,
@@ -447,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G622X5326J;
@@ -465,6 +473,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = clc.classmateHuseby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "classmateHuseby/classmateHuseby-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -475,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G622X5326J;
@@ -493,6 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = clc.classmateHuseby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "classmateHuseby/classmateHuseby-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

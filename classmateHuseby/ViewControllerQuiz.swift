@@ -9,7 +9,7 @@ import UIKit
 
 class ViewControllerQuiz: UIViewController {
     
-    var delegate: ViewControllerDelegate!
+    //var delegate: ViewControllerDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
