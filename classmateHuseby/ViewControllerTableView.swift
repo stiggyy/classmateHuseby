@@ -11,6 +11,13 @@ class ViewControllerTableView: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var tableViewOutlet: UITableView!
     
+    @IBOutlet weak var addNameOutlet: UITextField!
+    
+    @IBOutlet weak var addAgeOutlet: UITextField!
+    
+    @IBOutlet weak var addMoneyOutlet: UITextField!
+    
+    @IBOutlet weak var addPetOutlet: UITextField!
     
     var delegate: ViewControllerDelegate2!
     var classmates: [Classmate] = []
@@ -54,6 +61,35 @@ class ViewControllerTableView: UIViewController, UITableViewDelegate, UITableVie
         
         return cell
     }
+    
+    
+    @IBAction func addStudentAction(_ sender: Any) {
+    
+        let name = addNameOutlet.text!
+        let age = Int(addAgeOutlet.text!)!
+        let money = Double(addMoneyOutlet.text!)!
+        let pet = String(addPetOutlet.text!)
+        var realPet: Pets = Pets.rock
+        switch (pet){
+        case "dog":
+            realPet = Pets.dog
+            
+        case "cat":
+            realPet = Pets.cat
+        case "frog":
+            realPet = Pets.frog
+            
+        default:
+            realPet = Pets.rock
+        }
+        
+        let c = Classmate(name: name, age: age, money: money, pet: realPet)
+        
+        
+   
+        delegate.addClassmate(c)
+    }
+    
     
 
     /*

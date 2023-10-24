@@ -7,6 +7,7 @@
 protocol ViewControllerDelegate {
     func addClassmate(_ s1: Classmate)
     func seeClassmates() -> [Classmate]
+    func deleteClassmate(_ s1: Int)
 }
 import UIKit
 
@@ -31,6 +32,10 @@ class ViewControllerPleaseWork: UIViewController, ViewControllerDelegate {
     }
     func seeClassmates() -> [Classmate] {
         return classmates
+    }
+    
+    func deleteClassmate(_ s1: Int) {
+        classmates.remove(at: s1)
     }
     
     @IBAction func goToMainAction(_ sender: Any) {

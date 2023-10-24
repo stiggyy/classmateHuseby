@@ -5,7 +5,11 @@
 //  Created by CATHERINE HUSEBY on 10/12/23.
 
 protocol ViewControllerDelegate2 {
+    
+    func addClassmate(_ s1: Classmate)
    func seeClassmate() -> [Classmate]
+    
+    func deleteClassmate(_ s1: Int)
     
 }
 import UIKit
@@ -14,12 +18,11 @@ class ViewController: UIViewController, ViewControllerDelegate2, ViewControllerD
     
     
     func addClassmate(_ s1: Classmate) {
-        print("yay")
+        delegate.addClassmate(s1)
     }
     
     
-    
-    
+  
     
     
     func seeClassmates() -> [Classmate] {
@@ -60,6 +63,12 @@ class ViewController: UIViewController, ViewControllerDelegate2, ViewControllerD
 
     
     var classmates: [Classmate] = []
+    
+    
+    func deleteClassmate(_ s1: Int) {
+        delegate.deleteClassmate(s1)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
