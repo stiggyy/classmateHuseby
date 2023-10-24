@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		421C55012ADF57F000503D34 /* ViewControllerPleaseWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C55002ADF57F000503D34 /* ViewControllerPleaseWork.swift */; };
+		428488AE2AE6C3B70016EA56 /* crazyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428488AD2AE6C3B70016EA56 /* crazyCell.swift */; };
+		42A344122AE80FCA005544FC /* ViewControllerIndividual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A344112AE80FCA005544FC /* ViewControllerIndividual.swift */; };
 		42DA29842AD8358700A548C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29832AD8358700A548C5 /* AppDelegate.swift */; };
 		42DA29862AD8358700A548C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29852AD8358700A548C5 /* SceneDelegate.swift */; };
 		42DA29882AD8358700A548C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29872AD8358700A548C5 /* ViewController.swift */; };
@@ -20,6 +22,7 @@
 		42DA29AA2AD8358900A548C5 /* classmateHusebyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29A92AD8358900A548C5 /* classmateHusebyUITestsLaunchTests.swift */; };
 		42DA29B72AD835AA00A548C5 /* Classmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29B62AD835AA00A548C5 /* Classmate.swift */; };
 		42DA29B92AD8399900A548C5 /* ViewControllerQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DA29B82AD8399900A548C5 /* ViewControllerQuiz.swift */; };
+		42F9A3872AE2C71500C9A3FD /* ViewControllerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9A3862AE2C71500C9A3FD /* ViewControllerTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 /* Begin PBXFileReference section */
 		421C54FC2ADF57A400503D34 /* classmateHuseby-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "classmateHuseby-Bridging-Header.h"; sourceTree = "<group>"; };
 		421C55002ADF57F000503D34 /* ViewControllerPleaseWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPleaseWork.swift; sourceTree = "<group>"; };
+		428488AD2AE6C3B70016EA56 /* crazyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crazyCell.swift; sourceTree = "<group>"; };
+		42A344112AE80FCA005544FC /* ViewControllerIndividual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerIndividual.swift; sourceTree = "<group>"; };
 		42DA29802AD8358700A548C5 /* classmateHuseby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classmateHuseby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DA29832AD8358700A548C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42DA29852AD8358700A548C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 		42DA29A92AD8358900A548C5 /* classmateHusebyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classmateHusebyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		42DA29B62AD835AA00A548C5 /* Classmate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classmate.swift; sourceTree = "<group>"; };
 		42DA29B82AD8399900A548C5 /* ViewControllerQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerQuiz.swift; sourceTree = "<group>"; };
+		42F9A3862AE2C71500C9A3FD /* ViewControllerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +117,11 @@
 				42DA29B62AD835AA00A548C5 /* Classmate.swift */,
 				42DA29832AD8358700A548C5 /* AppDelegate.swift */,
 				42DA29852AD8358700A548C5 /* SceneDelegate.swift */,
+				428488AD2AE6C3B70016EA56 /* crazyCell.swift */,
 				42DA29872AD8358700A548C5 /* ViewController.swift */,
 				42DA29892AD8358700A548C5 /* Main.storyboard */,
+				42A344112AE80FCA005544FC /* ViewControllerIndividual.swift */,
+				42F9A3862AE2C71500C9A3FD /* ViewControllerTableView.swift */,
 				421C55002ADF57F000503D34 /* ViewControllerPleaseWork.swift */,
 				42DA29B82AD8399900A548C5 /* ViewControllerQuiz.swift */,
 				42DA298F2AD8358900A548C5 /* Assets.xcassets */,
@@ -275,11 +284,14 @@
 			files = (
 				421C55012ADF57F000503D34 /* ViewControllerPleaseWork.swift in Sources */,
 				42DA29882AD8358700A548C5 /* ViewController.swift in Sources */,
+				42F9A3872AE2C71500C9A3FD /* ViewControllerTableView.swift in Sources */,
 				42DA29B92AD8399900A548C5 /* ViewControllerQuiz.swift in Sources */,
 				42DA29B72AD835AA00A548C5 /* Classmate.swift in Sources */,
+				42A344122AE80FCA005544FC /* ViewControllerIndividual.swift in Sources */,
 				42DA298E2AD8358700A548C5 /* classmateHuseby.xcdatamodeld in Sources */,
 				42DA29842AD8358700A548C5 /* AppDelegate.swift in Sources */,
 				42DA29862AD8358700A548C5 /* SceneDelegate.swift in Sources */,
+				428488AE2AE6C3B70016EA56 /* crazyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

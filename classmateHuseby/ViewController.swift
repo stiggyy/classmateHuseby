@@ -3,13 +3,31 @@
 //  classmateHuseby
 //
 //  Created by CATHERINE HUSEBY on 10/12/23.
-//
-//protocol ViewControllerDelegate {
-  //  func addClassmate(_ s1: Classmate)
-//}
+
+protocol ViewControllerDelegate2 {
+   func seeClassmate() -> [Classmate]
+    
+}
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ViewControllerDelegate2, ViewControllerDelegate  {
+    
+    
+    func addClassmate(_ s1: Classmate) {
+        print("yay")
+    }
+    
+    
+    
+    
+    
+    
+    func seeClassmates() -> [Classmate] {
+        return delegate.seeClassmates()
+    }
+    
+    
+    
     
     var delegate: ViewControllerDelegate!
     
@@ -51,6 +69,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func seeClassmate() -> [Classmate] {
+        return classmates
+    }
     override func viewWillAppear(_ animated: Bool) {
         classmates = delegate.seeClassmates()
         showStudent()
@@ -66,6 +87,12 @@ class ViewController: UIViewController {
         
         ci = 0
         showStudent()
+        
+    }
+    
+    
+    @IBAction func toTableViewAction(_ sender: Any) {
+        performSegue(withIdentifier: "toTableView", sender: self)
         
     }
     
@@ -113,6 +140,7 @@ class ViewController: UIViewController {
         }
         
         delegate.addClassmate(Classmate(name: name, age: age2, money: money2, pet: realPets) )
+        classmates = delegate.seeClassmates()
         //classmates.append(Classmate(name: name, age: age2, money: money2, pet: realPets))
         
 }
@@ -123,9 +151,16 @@ class ViewController: UIViewController {
     }
     
     
+    
+    @IBAction func seeAllStudentsAction(_ sender: Any) {
+        performSegue(withIdentifier: "toTableView", sender: self)
+        
+    }
+    
+    
     func showStudent() {
         
-       classmates = delegate.seeClassmates()
+       
         nameDisplayOutlet.text = "Name: \(classmates[ci].name)"
         ageDisplayOutlet.text = "Age: \(String(classmates[ci].age))"
         moneyDisplayOutlet.text = "Money: \(String(classmates[ci].money))"
@@ -135,8 +170,8 @@ class ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nvc = segue.destination as! ViewControllerQuiz
-        //nvc.delegate = self
+        let nvc = segue.destination as! ViewControllerTableView
+        nvc.delegate = self
     }
 
 

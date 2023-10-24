@@ -39,6 +39,9 @@ class ViewControllerPleaseWork: UIViewController, ViewControllerDelegate {
         
     }
     
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nvc = segue.destination as! ViewController
         nvc.delegate = self

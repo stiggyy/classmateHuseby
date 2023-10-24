@@ -1,19 +1,13 @@
 //
-//  ViewControllerQuiz.swift
+//  ViewControllerIndividual.swift
 //  classmateHuseby
 //
-//  Created by CATHERINE HUSEBY on 10/12/23.
+//  Created by CATHERINE HUSEBY on 10/24/23.
 //
 
 import UIKit
 
-
-
-class ViewControllerQuiz: UIViewController {
-    
-    
-    
-    var delegate: ViewControllerDelegate!
+class ViewControllerIndividual: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
