@@ -64,11 +64,11 @@ class ViewControllerTableView: UIViewController, UITableViewDelegate, UITableVie
     
     
     @IBAction func addStudentAction(_ sender: Any) {
-    
+        
         let name = addNameOutlet.text!
         let age = Int(addAgeOutlet.text!)!
         let money = Double(addMoneyOutlet.text!)!
-        let pet = String(addPetOutlet.text!)
+        let pet = String(addPetOutlet.text!.lowercased())
         var realPet: Pets = Pets.rock
         switch (pet){
         case "dog":
@@ -86,8 +86,16 @@ class ViewControllerTableView: UIViewController, UITableViewDelegate, UITableVie
         let c = Classmate(name: name, age: age, money: money, pet: realPet)
         
         
-   
+        
         delegate.addClassmate(c)
+        print(classmates.count)
+
+        classmates = delegate.seeClassmate()
+        
+        classmates.append(c)
+        print(classmates.count)
+        tableViewOutlet.reloadData()
+
     }
     
     

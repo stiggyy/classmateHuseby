@@ -15,6 +15,10 @@ protocol ViewControllerDelegate2 {
 import UIKit
 
 class ViewController: UIViewController, ViewControllerDelegate2, ViewControllerDelegate  {
+    func seeClassmates() -> [Classmate] {
+        return classmates
+    }
+    
     
     
     func addClassmate(_ s1: Classmate) {
@@ -25,9 +29,7 @@ class ViewController: UIViewController, ViewControllerDelegate2, ViewControllerD
   
     
     
-    func seeClassmates() -> [Classmate] {
-        return delegate.seeClassmates()
-    }
+   
     
     
     
@@ -77,6 +79,7 @@ class ViewController: UIViewController, ViewControllerDelegate2, ViewControllerD
 
         // Do any additional setup after loading the view.
     }
+   
     
     func seeClassmate() -> [Classmate] {
         return classmates
